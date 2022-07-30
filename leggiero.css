@@ -24,9 +24,19 @@ hr
     border: 1px solid var(--theme-gray);
 }
 
+p
+{
+    margin-top: 0;
+}
+
 table
 {
     border-spacing: 20px;
+}
+
+td
+{
+    vertical-align: top;
 }
 
 div.box
