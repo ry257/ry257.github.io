@@ -9,32 +9,33 @@
     <div class="box">
       <h1>Raymond Yang</h1>
       <hr />
-      <p>Hi! My name is Raymond, and I'm a junior at Yale University pursuing a B.S. in <em>Computer Science</em> and <em>Statistics &amp; Data Science</em>. During my time at Yale, I hope to learn more about and work on projects related to machine learning and search. I love to work at the intersection of computer science and math &mdash; a recent <a href="https://github.com/abacles/fugue">project</a> combines Fourier Transforms, linear algebra, and music to create a note detection system.</p>
+      <p>Hi! My name is Raymond, and I'm a rising senior at Yale University pursuing a B.S. in <em>Computer Science</em> and <em>Statistics &amp; Data Science</em>. I love to work at the intersection of computer science and other fields &mdash; <a href="https://github.com/abacles/fugue">one of my favorite projects</a> combines Fourier Transforms, linear algebra, and music to create a note detection system.</p>
     </div>
     <div class="box">
       <h2>Experiences</h2>
       <table>
         <tr>
+          <td><img class="thumbnail" src="citsec.png" /></td>
+          <td>
+            <p>Citadel Securities (Miami, FL), <em>Software Engineering Intern</em>, summer 2023</p>
+            <p>(Incoming intern starting this June.)</p>
+          </td>
+        </tr>
+        <tr>
           <td><img class="thumbnail" src="spot.png" /></td>
           <td>
-            <p>Spotnana Technology, <em>Software Engineering Intern</em>, summer 2022</p>
-            <p>(Spotnana is rebuilding the infrastructure of the business travel industry and creating a consumer-grade booking app for business travelers, recently raising $75M in Series B funding.)</p>
-            <p>Built the United Airlines supplier engine for the booking app to enable shopping, booking, and cancelling United flights directly via United's New Distribution Capability (NDC) API, eliminating the need to shop through a Global Distribution System (GDS) such as Sabre while driving down costs. This project is on track to be deployed into the production app to travelers at 50+ corporate clients.</p>
-            <p>Creating a system to ensure itinerary data displayed in the app always stays up to date by efficiently detecting changes to the booking made outside the app (such as flight delays and voluntary changes made by the passenger through outside channels).</p>
+            <p>Spotnana Technology (Palo Alto, CA), <em>Software Engineering Intern</em>, summer 2022</p>
+            <p>(Spotnana is rebuilding the infrastructure of the business travel industry and creating a consumer-grade booking app for business travelers, raising $75M in Series B funding last year.)</p>
+            <p>Built the United Airlines supplier engine for the booking app to enable shopping, booking, and cancelling United flights directly via United's New Distribution Capability (NDC) API, eliminating the need to shop through a Global Distribution System (GDS) such as Sabre while driving down costs. Demonstrated the integration live to United Airlines representatives, passed their tests, and received their official approval to deploy to travelers at 50+ corporate clients. Pushed the project into production.</p>
+            <p>Designed a cache to reduce the loading time of the trip details page, achieving a 3x speedup on a cache hit. The cache saves recent NDC requests and responses to avoid sending unnecessary network calls that fetch information about the same trip multiple times.</p>
+            <p>Created a system to ensure itinerary data displayed in the app always stays up to date by detecting and reconciling changes to the booking made outside the app (such as flight delays and voluntary changes made by the passenger through outside channels). Deployed the system into production for American Airlines NDC travelers.</p>
           </td>
         </tr>
         <tr>
-          <td><img class="thumbnail" src="yale_college.png" /></td>
+          <td><img class="thumbnail" src="yale.png" /></td>
           <td>
             <p>Yale University Department of Music, <em>Software Developer</em>, summer 2021</p>
-            <p>Worked in a team to build a sight-singing practice app for an introductory music class (MUSI 110) at Yale which displays music in a custom notation designed to help students read musicical notation. Led the development of the Flask backend, created the user authentication system, and managed the server. Created a system to generate and cache music audio to accompany the sight-singing exercises.</p>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="thumbnail" src="yale_nursing.png" /></td>
-          <td>
-            <p>Yale University School of Nursing, <em>Research Assistant</em>, fall 2020 to summer 2021</p>
-            <p>Used Python to speed up the data analysis process by generating code to process the entire dataset at once rather than by individual subjects. Automated the data cleaning process by creating several Python scripts to reformat data tables.</p>
+            <p>Worked in a team led by the Chair of the music department to build a sight-singing practice app which displays music in a custom notation designed to help students in MUSI 110 (an introductory music class at Yale) to read music. Led the development of the Flask backend to support track selection and user authentication. Managed the server and containerized the app for deployment. Created a system to generate audio to accompany the sight-singing exercises on the fly.</p>
           </td>
         </tr>
         <tr>
@@ -72,10 +73,17 @@
           </td>
         </tr>
         <tr>
+          <td><img class="thumbnail" src="raft.png" /></td>
+          <td>
+            Raft<br />
+            Implemented the Raft consensus algorithm (as an independent project in CPSC 426 Distributed Systems) in Go. Added support for state persistence so that a rebooted server can resume replication from its most recent saved state. Implemented the fast log backtracking optimization described in the extended Raft paper.
+          </td>
+        </tr>
+        <tr>
           <td><img class="thumbnail" src="shell.png" /></td>
           <td>
             Shell<br />
-            Implemented a Bash-like shell (as an independent project in CPSC 323) in C supporting redirections, pipelines, conditionals, and background commands using fork&sol;exec.
+            Built a Bash-like shell (as an independent project in CPSC 323 Systems Programming) in C supporting redirections, pipelines, conditionals, and background commands using fork&sol;exec.
           </td>
         </tr>
       </table>
@@ -83,17 +91,18 @@
     <div class="box">
       <h2>Awards</h2>
       <ul>
-        <li>USACO (USA Computing Olympiad): Platinum rank (2017-2020); completed the USACO Training curriculum (<a href="https://github.com/abacles/usaco">GitHub</a>: about 8,700 total lines of code)</li>
         <li>William Lowell Putnam Mathematical Competition: rank 352nd (2021), top 500 (2020)</li>
-        <li>International Collegiate Programming Competition (ICPC), GNY Regionals: rank 9th (2022)</li>
-        <li>Google Code Jam: rank 1135th (2022 Round 1B)</li>
-        <li><a href="https://open.kattis.com/users/abacles">Kattis</a>: top 400 as of January 2022 (<a href="https://github.com/abacles/kattis">GitHub</a>: about 9,800 total lines of code)</li>
+        <li>International Collegiate Programming Competition (ICPC), GNY Regionals: rank 6th (2023), rank 9th (2022)</li>
+        <li>Google Code Jam: 2022 Round 2 competitor (top 13.7% of participants)</li>
+        <li>USACO (USA Computing Olympiad): Platinum rank (2017-2020); completed the USACO Training curriculum (<a href="https://github.com/abacles/usaco">GitHub</a>: about 8,700 total lines of code)</li>
+        <li>Kattis: top 400 as of January 2022 (<a href="https://github.com/abacles/kattis">GitHub</a>: about 9,800 total lines of code)</li>
         <li>UNC Asheville High School Programming Contest: 1st place team (3x, 2017-2019)</li>
         <li>College of Charleston High School Programming Contest: 1st place team (2x, 2019-2020)</li>
         <li>University of Virginia High School Programming Contest: 4th place team (2019)</li>
         <li>Microsoft Imagine Cup Earth Intermediate: 2nd place (2016)</li>
         <li>National Merit Scholarship winner</li>
         <li>National AP Scholar</li>
+        <li>Phi Beta Kappa</li>
       </ul>
     </div>
     <div class="box">
@@ -102,6 +111,8 @@
         <li>CPSC 223: Data Structures & Programming Techniques</li>
         <li>CPSC 323: Systems Programming & Computer Organization</li>
         <li>CPSC 366: Intensive Algorithms</li>
+        <li>CPSC 422: OS</li>
+        <li>CPSC 426: Distributed Systems</li>
         <li>CPSC 433: Computer Networks</li>
         <li>CPSC 437: Introduction to Database Systems</li>
         <li>CPSC 475: Computational Vision & Biological Perception</li>
@@ -110,15 +121,28 @@
         <li>MATH 255: Introduction to Real Analysis </li>
         <li>S&amp;DS 241: Probability Theory</li>
         <li>S&amp;DS 242: Theory of Statistics</li>
+        <li>S&amp;DS 265, 365: Machine Learning sequence</li>
+        <li>S&amp;DS 351: Stochastic Processes</li>
         <li>ECON 159, 160: Game Theory sequence</li>
-        <li>Coursera UC San Diego: Algorithms on Graphs, Algorithms on Strings, Advanced Algorithms & Complexity</li>
-        <li>Coursera Stanford: Machine Learning</li>
-        <li>Coursera DeepLearning.AI: Convolutional Neural Networks, Sequence Models</li>
       </ul>
     </div>
     <div class="box">
       <h2>Activities</h2>
       <table>
+        <tr>
+          <td><img class="thumbnail" src="yale.png" /></td>
+          <td>
+            Yale University Department of Computer Science, <em>Undergraduate Learning Assistant</em>, 2022-2023<br />
+            Held office hours for CPSC 365 (Algorithms) in the spring and CPSC 323 (Systems Programming) in the fall to help students navigate problem sets and programming projects.
+          </td>
+        </tr>
+        <tr>
+          <td><img class="thumbnail" src="yale_nursing.png" /></td>
+          <td>
+            Yale University School of Nursing, <em>Research Assistant</em>, fall 2020 to summer 2021<br />
+            Used Python to greatly speed up data analysis, enabling batch processing of patient data. Automated the data cleaning process by creating several Python scripts to reformat data tables.
+          </td>
+        </tr>
         <tr>
           <td><img class="thumbnail" src="tutoring.png" /></td>
           <td>
