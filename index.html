@@ -18,7 +18,9 @@
           <td><img class="thumbnail" src="citsec.png" /></td>
           <td>
             <p>Citadel Securities (Miami, FL), <em>Software Engineering Intern</em>, summer 2023</p>
-            <p>(Incoming intern starting this June.)</p>
+            <p>As part of the message bus team, contributed to a reliable, highly efficient, and customizable distributed publisher-subscriber system to support trading and research across the firm.</p>
+            <p>Enabled the monitoring of publisher and subscriber liveness in the distributed message bus. Implemented a robust retry system that recovers from interruption of the gRPC heartbeats. Supports indirect maintenance of heartbeats via brokers to reduce load on the discovery backend.</p>
+            <p>Captured and exposed the connectivity status between publishers and subscribers to reduce time needed to diagnose issues from 30+ minutes (of manually examining multiple logs) to seconds. Reports detailed, per-shard connection state between every pair of publisher and subscriber and records the latest state change event across multicast and TCP channels. Built a tool to construct connection graphs to visualize the system state. Designed a flexible data model for connectivity that supports different types of underlying transports.</p>
           </td>
         </tr>
         <tr>
